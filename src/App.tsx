@@ -4,12 +4,17 @@ function App() {
   return (
     <main className="min-h-screen w-screen">
       <nav
-        className="fixed z-10 flex h-12 w-screen items-center px-4 text-gray-800 shadow-md"
+        className="flex h-12 items-center text-gray-800 px-4 shadow-md fixed w-screen z-10"
         style={{ background: 'linear-gradient(to top, rgba(36, 36, 36, 0.2), rgba(36, 36, 36, 1))' }}
       >
-        <div className="flex h-12 flex-grow items-center">
-          <span className="block py-2">Custom React UI Component.</span>
-        </div>
+        <ul
+          id="navigation"
+          className="flex flex-grow items-center h-12 text-gray-800 space-x-4 md:space-x-8"
+        >
+          <li className="flex-shrink-0">
+            <span className="block py-2">Custom React UI Component.</span>
+          </li>
+        </ul>
       </nav>
       <UIPage />
     </main>
