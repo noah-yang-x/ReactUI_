@@ -37,7 +37,7 @@ import Form from "./Form";
 // const ThreePage = () => {
 const UIPage: React.FC = () => {
 
-  const wrapClass = { maxWidth: '400px', margin: '10px auto', paddingBottom: '6px', borderBottom: '1px solid #fff' };
+  const wrapClass = { width: '100%', maxWidth: '400px', margin: '10px auto', paddingBottom: '6px', borderBottom: '1px solid #fff' };
   const wrapTitleClass = { fontWeight:'900' };
 
   const UIComponents = [
@@ -111,11 +111,11 @@ const UIPage: React.FC = () => {
 
   return (
     // <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-    <div>
+    <div className="w-full">
 
       {/* <div className='h-12'></div> */}
 
-      <div className='px-4 pt-20'>
+      <div className='w-full px-4 pt-20'>
         {UIComponents.map((component, index) => (
           <div style={wrapClass} key={component.name + index}>
             <h3 style={wrapTitleClass}>{component.name}</h3>
