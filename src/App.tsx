@@ -2,9 +2,9 @@ import UIPage from './pages/UIPage';
 
 function App() {
   return (
-    <main className="min-h-screen w-screen">
+    <main className="min-h-screen w-full overflow-x-hidden">
       <nav
-        className="flex h-12 items-center text-gray-800 px-4 shadow-md fixed w-screen z-10"
+        className="flex h-12 items-center text-gray-800 px-4 shadow-md fixed left-0 right-0 w-full z-10"
         style={{ background: 'linear-gradient(to top, rgba(36, 36, 36, 0.2), rgba(36, 36, 36, 1))' }}
       >
         <ul
