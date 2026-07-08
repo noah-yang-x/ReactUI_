@@ -1,6 +1,6 @@
 {
   "name": "react-ui",
-  "homepage": "https://alancumberbatch.github.io/ReactUI_",
+  "homepage": "https://noah-yang-x.github.io/ReactUI_",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "build": "vite build",
     "type-check": "tsc -b --noEmit",
     "lint": "eslint .",
-    "predeploy": "npm run build",
+    "predeploy": "VITE_BASE_PATH=ReactUI_ npm run build",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
